@@ -11,7 +11,7 @@ public class ToDoHardCodedService {
 
 	// This will act as our hardcoded database we create static vars add data to them then return whenever the public  function find all is called
 	private static List<Todo> todos = new ArrayList();
-	private static int idCounter = 0;
+	private static long idCounter = 0;
 
 	static {
 		todos.add(new Todo(++idCounter, "in28minutes", "Learn to dance", new Date(), false));
